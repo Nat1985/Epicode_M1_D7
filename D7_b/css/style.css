@@ -17,16 +17,24 @@ header {
     align-items: center;
     padding: 10px;
 }
-    header a:link {
-        color: rgb(196, 0, 0);
+    header a:link, header a:visited {
+        color: rgb(238, 47, 82);
     }
 
     h1 {
         margin: 0px;
     }
 
-    header span {
-        margin: 8px 3px 8px 3px;
+    ul {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+        font-size: 9pt;
+    }
+
+    header li {
+        color: rgb(90, 90, 90);
+        margin: 0px 8px 0px 8px;
     }
 
     header h4 {
@@ -63,14 +71,33 @@ main {
             margin: 0px 3px 0px 3px;
             padding: 8px;
             border-radius: 5px;
-            color: grey;
         }
 
-        .category-list span:hover {
+        .category-list span:last-child {
             background-color: rgb(226, 226, 226);
             font-weight: 600;
             color: black;
         }
+
+        .category-list span:last-child a:link {
+            color: black;
+        }
+
+        .category-list a:link {
+            color: grey;
+        }
+
+        .category-list a:hover {
+            font-weight: bold;
+            color: black;
+        }
+
+
+        /* .category-list span:hover {
+            background-color: rgb(226, 226, 226);
+            font-weight: 600;
+            color: black;
+        } */
 
         .popular, .filters {
             padding: 6px;
