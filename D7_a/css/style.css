@@ -1,0 +1,44 @@
+body {
+    margin: 0px;
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+}
+
+header {
+    background-color: #91c9c4;
+    height: 100px;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-grow: 2;
+}
+
+    .navigation {
+        background-color: #f3af3d;
+        width: 20%;
+    }
+
+    .article {
+        background-color: #f8d767;
+        width: 50%;
+    }
+
+    .aside {
+        background-color: #fdf188;
+        width: 30%;
+    }
+
+footer {
+    background-color: #52a49a;
+    height: 120px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}
